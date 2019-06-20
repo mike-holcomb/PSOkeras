@@ -1,8 +1,10 @@
+BIG_SCORE = 1.e6  # type: float
+
 import keras
 from psokeras.particle import Particle
 from .util import ProgressBar
 
-BIG_SCORE = 1.e6  # type: float
+
 
 
 class Optimizer:
