@@ -1,6 +1,6 @@
 import keras
 from psokeras.particle import Particle
-from util import ProgressBar
+from .util import ProgressBar
 
 BIG_SCORE = 1.e6  # type: float
 
@@ -40,7 +40,7 @@ class Optimizer:
                 self.global_best_score = local_score
                 self.global_best_weights = p.get_best_weights()
 
-        print "PSO -- Initial best score {:0.4f}".format(self.global_best_score)
+        print("PSO -- Initial best score {:0.4f}".format(self.global_best_score))
 
         bar = ProgressBar(steps, updates=20)
 
