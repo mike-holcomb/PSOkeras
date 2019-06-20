@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
     b_train_score = model_s.evaluate(x_train, y_train, batch_size=BATCH_SIZE, verbose=0)
     b_test_score = model_s.evaluate(x_test, y_test, batch_size=BATCH_SIZE, verbose=0)
-    print "Backprop -- train: {:.4f}  test: {:.4f}".format(b_train_score, b_test_score)
+    print("Backprop -- train: {:.4f}  test: {:.4f}".format(b_train_score, b_test_score))
 
     # Section III: Then run the particle swarm optimization
     # First build model to train on (primarily used for structure, also included in swarm)
@@ -97,4 +97,4 @@ if __name__ == "__main__":
 
     p_train_score = model_p.evaluate(x_train, y_train, batch_size=BATCH_SIZE, verbose=0)
     p_test_score = model_p.evaluate(x_test, y_test, batch_size=BATCH_SIZE, verbose=0)
-    print "PSO -- train: {:.4f}  test: {:.4f}".format(p_train_score, p_test_score)
+    print("PSO -- train: {:.4f}  test: {:.4f}".format(p_train_score, p_test_score))
